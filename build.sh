@@ -12,8 +12,8 @@
 
 SECONDS=0 # builtin bash timer
 LOCAL_DIR=/home/ryuzenn/
-ZIPNAME="RyzenKernel-AOSP-Ginkgo-$(TZ=Asia/Jakarta date +"%Y%m%d-%H%M").zip"
-ZIPNAME_KSU="RyzenKernel-AOSP-Ginkgo-KSU-$(TZ=Asia/Jakarta date +"%Y%m%d-%H%M").zip"
+ZIPNAME="RyzenKernel-AOSP-Ginkgo-$(TZ=Asia/Baku date +"%Y%m%d-%H%M").zip"
+ZIPNAME_KSU="RyzenKernel-AOSP-Ginkgo-KSU-$(TZ=Asia/Baku date +"%Y%m%d-%H%M").zip"
 TC_DIR="${LOCAL_DIR}toolchain"
 CLANG_DIR="${TC_DIR}/clang-rastamod"
 GCC_64_DIR="${LOCAL_DIR}toolchain/aarch64-linux-android-4.9"
@@ -22,8 +22,8 @@ AK3_DIR="${LOCAL_DIR}AnyKernel3"
 DEFCONFIG="vendor/ginkgo-perf_defconfig"
 
 export PATH="$CLANG_DIR/bin:$PATH"
-export KBUILD_BUILD_USER="EdwiinKJ"
-export KBUILD_BUILD_HOST="RastaMod69"
+export KBUILD_BUILD_USER="shawk"
+export KBUILD_BUILD_HOST="munir"
 export LD_LIBRARY_PATH="$CLANG_DIR/lib:$LD_LIBRARY_PATH"
 export KBUILD_BUILD_VERSION="1"
 export LOCALVERSION
